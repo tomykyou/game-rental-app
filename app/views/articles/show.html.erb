@@ -1,0 +1,43 @@
+<div class="nav_zone">
+  <hr class="navi_solid">
+  <ul id="nav">
+    <li><strong>GAMREN</strong></li>
+    <li><%= link_to "商品一覧へ戻る", articles_path %></li>
+    <li><%= link_to "新しい商品を登録する", new_article_path %></li>
+    <li><%= link_to "ログアウト", logout_path, method: :delete %></li>
+  </ul>
+  <hr class="nav_solid">
+</div>
+<div class="index">
+    <h1>「<%= @article.product_name %>」</h1>
+    <hr>
+    <%= image_tag @article.image.url, class: "product_image" %>
+    
+    <h2>レンタル価格</h2>
+    <p><%= @article.product_price %>円</p>
+
+    <h2>プラットフォーム</h2>
+    <p><%= @article.platform %></p>
+
+    <h2>制作会社</h2>
+    <p><%= @article.product_company %></p>
+
+    <h2>詳細</h2>
+    <p><%= @article.product_text %></p>
+
+    <ul>
+        <li><%= link_to "カートに入れる", articles_carting_path(@article)%></li>
+        <li><%= link_to "商品情報を更新する", edit_article_path(@article) %></li>
+        <li><%= link_to "商品情報を削除する", article_path(@article),
+                        method: :delete,
+                        data: { confirm: "本当に商品登録を削除しますか?" } %></li>
+    </ul>
+
+    <h2>レビュ一覧</h2>
+    <hr>
+    <%= render @article.comments %>
+    
+
+    <h2>レビューを追加する</h2>
+    <%= render "comments/form" %>
+</div>

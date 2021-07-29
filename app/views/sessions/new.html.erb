@@ -1,0 +1,17 @@
+<div class="login_index">
+<h1>（ログイン）</h1>
+<h2>ログインには下記のメールアドレスとパスワードをお使いください。</h2>
+
+<h3>メールアドレス:tarou@example.com</h3>
+<h3>パスワード:hogehoge</h3>
+
+<%= form_for(:session, url: login_path) do |f| %>
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+  <br>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  <br>
+  <%= f.submit "Log in" %>
+<% end %>
+</div>

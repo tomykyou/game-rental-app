@@ -1,0 +1,82 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body{
+    background-image: image-url('HP_Background.jpg');
+    height: 100%;
+    }
+
+div.login_index{
+    border: 1px solid rgb(0, 0, 0);
+    margin: auto;
+    width: 800px;
+    padding: 10px 50px 20px;
+    background-color: aliceblue;
+    }
+
+h3.login_error{
+    padding:12px;
+    font-weight:100; 
+    color:#262626; 
+    background:#FFEBE8; 
+    border:2px solid #990000; 
+    margin-right: auto;
+    width: 400px;
+    height: 20px;
+    }
+
+hr.nav_solid{
+    border: 0;
+    height: 5px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+    }
+
+h3.error {
+     padding:12px;
+     font-weight:100; 
+     color:#262626; 
+     background:#FFEBE8; 
+     border:2px solid #990000; 
+     width: 550px;
+     height: 20px;
+    }
+
+div.index_tag{
+    margin-left: 170px;
+    }
+
+div.index{
+    border: 1px solid rgb(0, 0, 0);
+    flex: 1 1 100%;
+    overflow-y: scroll;
+    margin-left: 170px;
+    width: 1000px;
+    height:100%;
+    padding: 10px 50px 20px;
+    background-color: aliceblue;
+    }
+
+.product_image {
+    width: 400px;
+    height: 300px;
+    }
+
+div.nav_zone{
+    background-color: aliceblue;
+    }
+    
+#nav {
+    list-style: none;
+    overflow: hidden;
+    }
+       
+#nav li {
+    width: 200px;
+    text-align: center;
+    float: left;
+    }
+       

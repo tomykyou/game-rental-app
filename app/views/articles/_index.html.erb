@@ -1,0 +1,20 @@
+<div class="nav_zone">
+  <hr class="nav_solid">
+  <ul id="nav">
+    <li><strong>GAMREN</strong></li>
+    <li><%= link_to "商品一覧へ戻る", articles_path %></li>
+    <li><%= link_to "新しい商品を登録する", new_article_path %></li>
+    <li><%= link_to "ログアウト", logout_path, method: :delete %></li>
+  </ul>
+  <hr class="menu_solid">
+</div>
+<div class="index_tag">
+  <h2>ゲーム一覧</h2>
+</div>
+<div class="index">
+  <ul>
+    <% @articles.each do |article| %>
+      <li><h2><%= link_to article.product_name, article %></h2></li>  
+    <% end %>
+  </ul>
+</div>

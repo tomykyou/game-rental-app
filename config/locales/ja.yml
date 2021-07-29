@@ -1,0 +1,11 @@
+ja:
+  activerecord:
+    attributes:
+      article:
+        #title: 名前
+        #content: ブログ本文
+        product_name: 商品名
+        product_price: 商品価格 
+        product_company: 制作会社
+        product_text: 商品詳細
+        image: 商品画像

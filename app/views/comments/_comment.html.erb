@@ -1,0 +1,15 @@
+<p>
+  <%= comment.commenter %>さん
+</p>
+
+<p>
+
+  「<%= comment.body %>」
+
+</p>
+
+<p><%= link_to 'このレビューを削除', [comment.article, comment],
+              method: :delete,
+              data: { confirm: "レビューを削除する" } %>
+</p>
+<hr>

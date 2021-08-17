@@ -23,3 +23,7 @@ Things you may want to cover:
 
 * ...
 # Sample
+
+今後挑戦したいこと。
+・AWS連携
+・Docker連携
